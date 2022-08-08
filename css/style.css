@@ -48,6 +48,10 @@ body {
 
 .projetos {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .redes {
@@ -71,4 +75,13 @@ body {
 .redes a:hover {
     opacity: 40%;
     cursor: pointer;
+}
+
+.projetos .proj {
+   height: 90%;
+   width: 90%;
+   /*border: 2px solid #7275e4;*/
+   border-radius: 8px;
+   margin-top: 15px;
+   background-color: #1e1e1e;
 }
