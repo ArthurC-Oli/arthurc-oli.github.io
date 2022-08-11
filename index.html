@@ -31,6 +31,10 @@
               });
             } // End if
           });
+
+          $(".nav ul li a").on('click', function(event) {
+            document.getElementById("side-menu").checked = false;
+          });
         });
     </script>
     <title>Portfolio</title>
@@ -44,9 +48,9 @@
 
       <nav class="nav">
         <ul>
-          <li><a href="#title">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#title" id="nav-link">Home</a></li>
+          <li><a href="#sobre" id="nav-link">Sobre</a></li>
+          <li><a href="#projetos" id="nav-link">Projetos</a></li>
         </ul>
       </nav>
     </header>
