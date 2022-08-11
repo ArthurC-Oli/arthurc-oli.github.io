@@ -10,7 +10,7 @@
     <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links
-          $(".link").on('click', function(event) {
+          $("a").on('click', function(event) {
         
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
@@ -36,30 +36,58 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <section class="title">
-        <h1>Olá, sou <span>Arthur</span>.</h1>
-        <p>Desenvolvedor front-end</p>
-        
-        <a class="link" href="#projetos">Veja meus projetos</a>
-        
-        <div class="redes">
-           <a href="">
-               <i class="fa-brands fa-github" size="30"></i>
-           </a>
-           <a href="">
-               <i class="fa-brands fa-linkedin"></i>
-           </a>
-           <a href="">
-               <i class="fa-brands fa-twitter"></i>
-           </a>
+    <header>
+      <a class="header-title" href="#title">Arthur<span>();</span></a>
+
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#title">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="title" id="title">
+          <h1>Olá, eu sou <span>Arthur</span>.</h1>
+          <p>Desenvolvedor front-end</p>
+          
+          <a class="link" href="#projetos">Conheça meu portfólio</a>
+          
+          <div class="redes">
+             <a href="">
+                 <i class="fa-brands fa-github" size="30"></i>
+             </a>
+             <a href="">
+                 <i class="fa-brands fa-linkedin"></i>
+             </a>
+             <a href="">
+                 <i class="fa-brands fa-twitter"></i>
+             </a>
+          </div>
+      </section>
+      
+      <section class="sobre" id="sobre">
+        <div class="sobre-text">
+          <h2>Sobre</h2>
+          <p>Me chamo Arthur. Sou desenvolvedor<br> front-end freelancer, e trabalho com HTML, CSS, JS,<br> ReactJS e Python</p>
         </div>
-    </section>
-    
-    <section class="projetos" id="projetos">
-        <h2>Projetos</h2>
-        <div class="proj">
-            
+        <div class="sobre-habilidades">
+          <h2>Habilidades</h2>
+  
+          
         </div>
-    </section>
+      </section>
+  
+      <section class="projetos" id="projetos">
+          <h2>Projetos</h2>
+          <div class="proj">
+              
+          </div>
+      </section>
+    </main>
 </body>
 </html>
