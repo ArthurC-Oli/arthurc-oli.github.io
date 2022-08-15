@@ -21,7 +21,7 @@ body {
 }
 
 .title {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,11 +61,11 @@ body {
 }
 
 .projetos {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 118px;
 }
 
 .redes {
@@ -100,6 +100,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-wrap: wrap;
    /* flex-direction: column; */
 }
 
@@ -155,6 +156,7 @@ body {
 
 header {
     background-color: var(--bg);
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
@@ -221,7 +223,7 @@ header ul li a:hover:after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    padding-top: 118px;
 }
 
 /* Header responsivo */
@@ -307,7 +309,6 @@ header ul li a:hover:after {
     top:0;
 }
 
-
 /* Responsiveness */
 
 @media (min-width: 768px) {
@@ -338,13 +339,21 @@ header ul li a:hover:after {
         display: none;
     }
 
-    .projetos .proj {
+    .sobre {
+        padding-top: 61px;
+    }
+
+    .projetos {
+        padding-top: 61px;
+    }
+
+    /* .projetos .proj {
         display: grid;
         grid-template-columns: auto auto auto;
-    }
+    } */
 }
 
-@media (max-width: 1230px) {
+/* @media (max-width: 1230px) {
     .projetos .proj {
         display: grid;
         grid-template-columns: auto auto;
@@ -358,4 +367,4 @@ header ul li a:hover:after {
     }
 }
 
-/* Header responsivo - fim */
+Header responsivo - fim */
